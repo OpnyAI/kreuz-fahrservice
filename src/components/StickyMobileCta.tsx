@@ -1,4 +1,5 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import { ResponsiveMessageCta } from "./ResponsiveMessageCta";
 
 export function StickyMobileCta() {
   return (
@@ -11,13 +12,14 @@ export function StickyMobileCta() {
           <Phone className="h-4 w-4" aria-hidden="true" />
           Jetzt anrufen
         </a>
-        <a
-          href="https://wa.me/491728352885"
-          className="flex flex-1 items-center justify-center gap-2 rounded-full border border-ink-300 bg-white px-4 py-3 text-sm font-semibold text-ink-900"
-        >
-          <MessageCircle className="h-4 w-4" aria-hidden="true" />
-          WhatsApp
-        </a>
+        <ResponsiveMessageCta
+          type="link"
+          mobileClassName="flex-1 items-center justify-center gap-2 rounded-full border border-ink-300 bg-white px-4 py-3 text-sm font-semibold text-ink-900"
+          desktopClassName="flex-1 items-center justify-center gap-2 rounded-full border border-ink-300 bg-white px-4 py-3 text-sm font-semibold text-ink-900"
+          mobileDisplayClassName="flex"
+          desktopDisplayClassName="flex"
+          iconClassName="h-4 w-4"
+        />
       </div>
     </div>
   );

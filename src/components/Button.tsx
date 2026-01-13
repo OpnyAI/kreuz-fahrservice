@@ -24,6 +24,7 @@ type ButtonProps = {
   variant?: keyof typeof variants;
   size?: keyof typeof sizes;
   ariaLabel?: string;
+  className?: string;
 };
 
 export function Button({
@@ -31,9 +32,12 @@ export function Button({
   href,
   variant = "primary",
   size = "md",
-  ariaLabel
+  ariaLabel,
+  className: classNameProp
 }: ButtonProps) {
-  const className = `${baseStyles} ${variants[variant]} ${sizes[size]}`;
+  const className = [baseStyles, variants[variant], sizes[size], classNameProp]
+    .filter(Boolean)
+    .join(" ");
 
   if (href) {
     const isInternal = href.startsWith("/") || href.startsWith("#");

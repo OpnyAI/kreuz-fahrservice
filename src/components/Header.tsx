@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import { ResponsiveMessageCta } from "./ResponsiveMessageCta";
 
 const navItems = [
   { href: "#leistungen", label: "Leistungen" },
@@ -44,13 +45,12 @@ export function Header() {
             <Phone className="h-4 w-4" aria-hidden="true" />
             01728 352885
           </a>
-          <a
-            href="https://wa.me/491728352885"
-            className="inline-flex items-center gap-2 rounded-full bg-accent-600 px-4 py-2 text-sm font-semibold text-white"
-          >
-            <MessageCircle className="h-4 w-4" aria-hidden="true" />
-            WhatsApp
-          </a>
+          <ResponsiveMessageCta
+            type="link"
+            mobileClassName="items-center gap-2 rounded-full bg-accent-600 px-4 py-2 text-sm font-semibold text-white"
+            desktopClassName="items-center gap-2 rounded-full bg-accent-600 px-4 py-2 text-sm font-semibold text-white"
+            iconClassName="h-4 w-4"
+          />
         </div>
       </div>
     </header>

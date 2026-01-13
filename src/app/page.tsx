@@ -19,6 +19,7 @@ import { IconList, IconListItem } from "@/components/IconList";
 import { Steps, Step } from "@/components/Steps";
 import { Accordion } from "@/components/Accordion";
 import { ContactForm } from "@/components/ContactForm";
+import { ResponsiveMessageCta } from "@/components/ResponsiveMessageCta";
 
 const faqItems = [
   {
@@ -35,6 +36,16 @@ const faqItems = [
     title: "Welche Regionen bedienen Sie?",
     content:
       "Unser Schwerpunkt liegt in Schorndorf, Göppingen, Uhingen und Schwäbisch Gmünd. Fahrten darüber hinaus sind nach Absprache möglich.",
+  },
+  {
+    title: "Bieten Sie medizinische Fahrten in Schorndorf an?",
+    content:
+      "Ja, wir übernehmen regelmäßig medizinische Fahrten in Schorndorf und Umgebung, inklusive Arzt-, Klinik- und Reha-Terminen.",
+  },
+  {
+    title: "Übernehmen Sie Fahrten im Rems-Murr-Kreis und Ostalbkreis?",
+    content:
+      "Ja, wir sind im gesamten Rems-Murr-Kreis sowie im Ostalbkreis unterwegs. Sprechen Sie uns an, wenn Ihr Ziel außerhalb des Kerngebiets liegt.",
   },
   {
     title: "Kann eine Begleitperson mitfahren?",
@@ -81,12 +92,10 @@ export default function HomePage() {
               Kreuz-Fahrservice und medizinischer Fahrdienst
             </p>
             <h1 className="text-3xl font-semibold text-ink-900 sm:text-4xl lg:text-5xl">
-              Medizinischer Fahrdienst &amp; zuverlässige Transfers in Ihrer
-              Region
+              Medizinischer Fahrdienst in Schorndorf &amp; Umgebung
             </h1>
             <p className="text-base text-ink-600 sm:text-lg">
-              Rettungsassistent, 16 Jahre Erfahrung, diskrete Begleitung –
-              Kassen- &amp; Privatfahrten.
+              Zuverlässige Kranken- und Transferfahrten
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button
@@ -97,15 +106,12 @@ export default function HomePage() {
                 <Phone className="h-5 w-5" aria-hidden="true" />
                 Jetzt anrufen
               </Button>
-              <Button
-                href="https://wa.me/491728352885"
+              <ResponsiveMessageCta
+                type="button"
                 variant="secondary"
                 size="lg"
-                ariaLabel="WhatsApp schreiben"
-              >
-                <MessageCircle className="h-5 w-5" aria-hidden="true" />
-                WhatsApp schreiben
-              </Button>
+                iconClassName="h-5 w-5"
+              />
             </div>
             <div className="flex flex-wrap gap-3 text-xs text-ink-600">
               <Badge>Rettungsassistent</Badge>
@@ -268,6 +274,9 @@ export default function HomePage() {
             <p className="mt-4 text-sm font-semibold text-ink-900">
               Ingo Kreuz · Rettungsassistent
             </p>
+            <p className="text-xs text-ink-600">
+              Rettungsassistent · 16 Jahre Berufserfahrung · Schorndorf
+            </p>
           </div>
         </div>
       </section>
@@ -310,6 +319,12 @@ export default function HomePage() {
             title="Regional stark – zuverlässig vor Ort"
             description="Wir fahren für Sie im Rems-Murr-Kreis und Ostalbkreis. Schorndorf, Göppingen, Uhingen und Schwäbisch Gmünd gehören zu unserem Kerngebiet."
           />
+          <p className="text-sm text-ink-600">
+            Unser medizinischer Fahrdienst ist regelmäßig in Schorndorf (73614),
+            Göppingen (73033), Uhingen (73066) und Schwäbisch Gmünd (73525) im
+            Einsatz. Zusätzlich übernehmen wir Fahrten im gesamten
+            Rems-Murr-Kreis sowie im Ostalbkreis.
+          </p>
           <div className="flex flex-wrap gap-3">
             <Badge>Schorndorf · 73614</Badge>
             <Badge>Göppingen · 73033</Badge>
