@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
 import {
   Ambulance,
@@ -122,6 +123,9 @@ export default function HomePage() {
                 iconClassName="h-5 w-5"
               />
             </div>
+            <p className="text-xs text-ink-600">
+              Unverbindlich · Persönliche Rückmeldung · Keine Warteschleife
+            </p>
             <div className="flex flex-wrap gap-3 text-xs text-ink-600">
               <Badge>Rettungsassistent</Badge>
               <Badge>16 Jahre Erfahrung</Badge>
@@ -337,10 +341,18 @@ export default function HomePage() {
             Rems-Murr-Kreis sowie im Ostalbkreis.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Badge>Schorndorf · 73614</Badge>
-            <Badge>Göppingen · 73033</Badge>
-            <Badge>Uhingen · 73066</Badge>
-            <Badge>Schwäbisch Gmünd · 73525</Badge>
+            <Link href="/schorndorf">
+              <Badge>Schorndorf · 73614</Badge>
+            </Link>
+            <Link href="/goeppingen">
+              <Badge>Göppingen · 73033</Badge>
+            </Link>
+            <Link href="/uhingen">
+              <Badge>Uhingen · 73066</Badge>
+            </Link>
+            <Link href="/schwaebisch-gmuend">
+              <Badge>Schwäbisch Gmünd · 73525</Badge>
+            </Link>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <Button
@@ -388,6 +400,9 @@ export default function HomePage() {
                   >
                     01728352885
                   </a>
+                  <p className="text-xs text-ink-600">
+                    Erreichbar werktags · Rückruf bei verpasstem Anruf
+                  </p>
                 </div>
               </div>
               <div className="flex items-center gap-3">

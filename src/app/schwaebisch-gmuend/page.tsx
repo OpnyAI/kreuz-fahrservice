@@ -79,6 +79,9 @@ export default function SchwaebischGmuendPage() {
                 iconClassName="h-5 w-5"
               />
             </div>
+            <p className="text-xs text-ink-600">
+              Unverbindlich · Persönliche Rückmeldung · Keine Warteschleife
+            </p>
             <div className="flex flex-wrap gap-3 text-xs text-ink-600">
               <Badge>Rettungsassistent</Badge>
               <Badge>16 Jahre Erfahrung</Badge>
