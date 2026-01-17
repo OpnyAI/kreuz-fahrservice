@@ -55,33 +55,39 @@ export default function SchwaebischGmuendPage() {
               Umgebung unterstützen wir Sie auch bei Fragen zu Verordnung und
               Genehmigung – damit die Fahrt organisatorisch sauber läuft.
             </p>
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <Button
-                href="tel:01728352885"
-                size="lg"
-                ariaLabel="Jetzt anrufen"
-              >
-                <Phone className="h-5 w-5" aria-hidden="true" />
-                Jetzt anrufen
-              </Button>
-              <Button
-                href="#kontakt"
-                variant="secondary"
-                size="lg"
-                ariaLabel="Verfügbarkeit anfragen"
-              >
-                Verfügbarkeit anfragen
-              </Button>
-              <ResponsiveMessageCta
-                type="button"
-                variant="secondary"
-                size="lg"
-                iconClassName="h-5 w-5"
-              />
+            <div id="hero-cta-sentinel">
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <Button
+                  href="tel:+4915222665594"
+                  size="lg"
+                  ariaLabel="Jetzt anrufen"
+                  className="hidden md:inline-flex md:h-12 md:px-6 md:py-2 md:gap-2"
+                >
+                  <Phone className="h-5 w-5" aria-hidden="true" />
+                  Jetzt anrufen
+                </Button>
+                <Button
+                  href="#kontakt"
+                  variant="secondary"
+                  size="lg"
+                  ariaLabel="Verfügbarkeit anfragen"
+                  className="md:h-12 md:px-6 md:py-2 md:gap-2"
+                >
+                  Verfügbarkeit anfragen
+                </Button>
+                <ResponsiveMessageCta
+                  type="button"
+                  variant="secondary"
+                  size="lg"
+                  iconClassName="h-5 w-5"
+                  mobileClassName="hidden"
+                  desktopClassName="md:h-12 md:px-6 md:py-2 md:gap-2"
+                />
+              </div>
+              <p className="mt-4 text-xs leading-relaxed text-ink-600">
+                Unverbindlich · Persönliche Rückmeldung · Keine Warteschleife
+              </p>
             </div>
-            <p className="text-xs text-ink-600">
-              Unverbindlich · Persönliche Rückmeldung · Keine Warteschleife
-            </p>
             <div className="flex flex-wrap gap-3 text-xs text-ink-600">
               <Badge>Rettungsassistent</Badge>
               <Badge>16 Jahre Erfahrung</Badge>
@@ -132,7 +138,7 @@ export default function SchwaebischGmuendPage() {
               Verfügbarkeit anfragen
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Button>
-            <Button href="tel:01728352885" variant="secondary">
+            <Button href="tel:+4915222665594" variant="secondary">
               Jetzt anrufen
             </Button>
           </div>
@@ -147,7 +153,7 @@ export default function SchwaebischGmuendPage() {
             description="Rufen Sie uns an oder fragen Sie die Verfügbarkeit an – wir melden uns schnellstmöglich zurück."
           />
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button href="tel:01728352885" size="lg" ariaLabel="Jetzt anrufen">
+            <Button href="tel:+4915222665594" size="lg" ariaLabel="Jetzt anrufen">
               <Phone className="h-5 w-5" aria-hidden="true" />
               Jetzt anrufen
             </Button>

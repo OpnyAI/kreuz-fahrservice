@@ -25,7 +25,7 @@ export function Footer() {
             </div>
 
             <div className="space-y-1">
-              <p>Telefon 01728352885</p>
+              <p>Telefon +49 1522 2665594</p>
               <p>kontakt@kreuz-fahrservice.de</p>
             </div>
           </div>

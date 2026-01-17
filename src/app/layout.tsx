@@ -36,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="font-sans pb-24 md:pb-0">
+      <body className="font-sans pb-[calc(env(safe-area-inset-bottom)+6rem)] md:pb-0">
         <Header />
         {children}
         <Footer />

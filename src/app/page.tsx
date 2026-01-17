@@ -20,7 +20,6 @@ import { IconList, IconListItem } from "@/components/IconList";
 import { Steps, Step } from "@/components/Steps";
 import { Accordion } from "@/components/Accordion";
 import { ContactForm } from "@/components/ContactForm";
-import { ResponsiveMessageCta } from "@/components/ResponsiveMessageCta";
 import { MediaCard } from "@/components/MediaCard";
 
 const faqItems = [
@@ -62,7 +61,7 @@ export default function HomePage() {
     "@type": "LocalBusiness",
     name: "Kreuz-Fahrservice",
     image: "https://www.kreuz-fahrservice.de/images/fahrzeug.jpg",
-    telephone: "01728352885",
+    telephone: "+49 1522 2665594",
     email: "kontakt@kreuz-fahrservice.de",
     address: {
       "@type": "PostalAddress",
@@ -87,45 +86,51 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
       <section className="relative overflow-hidden bg-offwhite">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 py-16 sm:px-6 lg:flex-row lg:items-center">
           <div className="max-w-xl space-y-6">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-600">
               Kreuz-Fahrservice und medizinischer Fahrdienst
             </p>
+
             <h1 className="text-3xl font-semibold text-ink-900 sm:text-4xl lg:text-5xl">
               Medizinischer Fahrdienst in Uhingen &amp; Umgebung
             </h1>
+
             <p className="text-base text-ink-600 sm:text-lg">
               Zuverlässige Kranken- und Transferfahrten
             </p>
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <Button
-                href="tel:01728352885"
-                size="lg"
-                ariaLabel="Jetzt anrufen"
-              >
-                <Phone className="h-5 w-5" aria-hidden="true" />
-                Jetzt anrufen
-              </Button>
-              <Button
-                href="#kontakt"
-                variant="secondary"
-                size="lg"
-                ariaLabel="Verfügbarkeit anfragen"
-              >
-                Verfügbarkeit anfragen
-              </Button>
-              <ResponsiveMessageCta
-                type="button"
-                variant="secondary"
-                size="lg"
-                iconClassName="h-5 w-5"
-              />
+
+            {/* HERO CTA (nur 2 Buttons wie vorher) */}
+            <div id="hero-cta-sentinel">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+                <Button
+                  href="tel:+4915222665594"
+                  size="lg"
+                  ariaLabel="Jetzt anrufen"
+                  className="h-12 gap-2 px-6 py-2"
+                >
+                  <Phone className="h-5 w-5" aria-hidden="true" />
+                  Jetzt anrufen
+                </Button>
+
+                <Button
+                  href="#kontakt"
+                  variant="secondary"
+                  size="lg"
+                  ariaLabel="Verfügbarkeit anfragen"
+                  className="h-12 gap-2 px-6 py-2"
+                >
+                  Verfügbarkeit anfragen
+                </Button>
+              </div>
+
+              <p className="mt-4 text-xs leading-relaxed text-ink-600">
+                Unverbindlich · Persönliche Rückmeldung · Keine Warteschleife
+              </p>
             </div>
-            <p className="text-xs text-ink-600">
-              Unverbindlich · Persönliche Rückmeldung · Keine Warteschleife
-            </p>
+
             <div className="flex flex-wrap gap-3 text-xs text-ink-600">
               <Badge>Rettungsassistent</Badge>
               <Badge>16 Jahre Erfahrung</Badge>
@@ -133,12 +138,14 @@ export default function HomePage() {
               <Badge>Unterstützung bei Genehmigungen</Badge>
             </div>
           </div>
+
           <MediaCard>
             <div className="mb-3">
               <div className="inline-flex items-center rounded-full border border-ink-200 bg-white/90 px-3 py-1 text-xs font-semibold text-ink-800">
                 Einsatzgebiet: Rems-Murr-Kreis &amp; Ostalbkreis
               </div>
             </div>
+
             <Image
               src="/images/fahrzeug.jpg"
               alt="Einsatzfahrzeug Kreuz-Fahrservice"
@@ -157,6 +164,7 @@ export default function HomePage() {
             title="Zwei Leistungswelten – medizinisch und individuell"
             description="Ob verordnete Fahrten oder flexible Transfers: Wir bieten verlässliche Unterstützung mit klarer Kommunikation und diskreter Begleitung."
           />
+
           <div className="grid gap-6 lg:grid-cols-2">
             <Card>
               <div className="flex items-center gap-3">
@@ -167,10 +175,12 @@ export default function HomePage() {
                   Medizinischer Fahrdienst
                 </h3>
               </div>
+
               <p className="mt-4 text-sm text-ink-600">
                 Ärztlich verordnete medizinische Fahrten mit Begleitung –
                 sicher, ruhig und kassenkonform.
               </p>
+
               <IconList>
                 <IconListItem icon={<CheckCircle2 className="h-4 w-4" />}>
                   Ambulante Fahrten zu und von Krankenhäusern, Bestrahlungs- und
@@ -178,20 +188,24 @@ export default function HomePage() {
                   Pflegeheimen/sozialen Einrichtungen, Reha-Einrichtungen sowie
                   Krankenhausentlassungen
                 </IconListItem>
+
                 <IconListItem icon={<CheckCircle2 className="h-4 w-4" />}>
                   Genehmigungsfahrten Pflegegrad 3–5, Schwerbehindertenausweis
                   mit Merkzeichen G, H oder Bl
                 </IconListItem>
+
                 <IconListItem icon={<CheckCircle2 className="h-4 w-4" />}>
                   Genehmigte Fahrten der gesetzlichen Krankenkassen und private
                   medizinische Fahrten nach ärztlicher Verordnung
                 </IconListItem>
+
                 <IconListItem icon={<CheckCircle2 className="h-4 w-4" />}>
                   Begleitete Fahrten bei Mobilitätseinschränkungen und
                   Einkaufsfahrten (Selbstzahler)
                 </IconListItem>
               </IconList>
             </Card>
+
             <Card>
               <div className="flex items-center gap-3">
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-100 text-accent-600">
@@ -201,21 +215,26 @@ export default function HomePage() {
                   Transfer- &amp; Sonderfahrten
                 </h3>
               </div>
+
               <p className="mt-4 text-sm text-ink-600">
                 Flexible Transfers mit Fokus auf Komfort und Entlastung für
                 Angehörige und Organisationen.
               </p>
+
               <IconList>
                 <IconListItem icon={<CheckCircle2 className="h-4 w-4" />}>
                   Flughafentransfer: Stuttgart · München · Frankfurt
                 </IconListItem>
+
                 <IconListItem icon={<CheckCircle2 className="h-4 w-4" />}>
                   Wochenend- und Ausflugsfahrten
                 </IconListItem>
+
                 <IconListItem icon={<CheckCircle2 className="h-4 w-4" />}>
                   Individuelle Fahrten nach Absprache und Entlastung der
                   Angehörigen
                 </IconListItem>
+
                 <IconListItem icon={<CheckCircle2 className="h-4 w-4" />}>
                   Firmen und Daueraufträge
                 </IconListItem>
@@ -232,6 +251,7 @@ export default function HomePage() {
             title="In drei klaren Schritten zur sicheren Fahrt"
             description="Wir begleiten Sie von der Anfrage bis zur Fahrt – inklusive Unterstützung bei Genehmigungen und organisatorischen Details."
           />
+
           <Steps>
             <Step index="01" title="Anfrage">
               Telefonisch, per WhatsApp oder per Formular. Wir erfassen Datum,
@@ -257,6 +277,7 @@ export default function HomePage() {
               title="Erfahrung, die Vertrauen schafft"
               description="Inhaber Ingo Kreuz ist Rettungsassistent mit 16 Jahren Berufserfahrung. Ruhe, Geduld und ein sicherer Umgang mit mobilitätseingeschränkten Menschen stehen im Mittelpunkt."
             />
+
             <IconList>
               <IconListItem icon={<ShieldCheck className="h-4 w-4" />}>
                 Rettungsassistent und 16 Jahre Berufserfahrung im Rettungsdienst
@@ -278,6 +299,7 @@ export default function HomePage() {
               </IconListItem>
             </IconList>
           </div>
+
           <MediaCard>
             <Image
               src="/images/inhaber.jpg"
@@ -286,11 +308,11 @@ export default function HomePage() {
               height={520}
               className="h-full w-full rounded-2xl object-cover object-top"
             />
-            <p className="mt-4 text-sm font-semibold text-ink-900">
+            <p className="mt-5 text-sm font-semibold text-ink-900 sm:mt-4">
               Ingo Kreuz · Rettungsassistent
             </p>
             <p className="text-xs text-ink-600">
-              Rettungsassistent · 16 Jahre Berufserfahrung · Schorndorf
+              Rettungsassistent · 16 Jahre Berufserfahrung · Uhingen
             </p>
           </MediaCard>
         </div>
@@ -311,6 +333,7 @@ export default function HomePage() {
                 Familie spürbar.
               </p>
             </Card>
+
             <Card>
               <SectionHeader
                 eyebrow="Für Krankenkassen/Behörden"
@@ -334,12 +357,14 @@ export default function HomePage() {
             title="Regional stark – zuverlässig vor Ort"
             description="Wir fahren für Sie im Rems-Murr-Kreis und Ostalbkreis. Schorndorf, Göppingen, Uhingen und Schwäbisch Gmünd gehören zu unserem Kerngebiet."
           />
+
           <p className="text-sm text-ink-600">
             Unser medizinischer Fahrdienst ist regelmäßig in Schorndorf (73614),
             Göppingen (73033), Uhingen (73066) und Schwäbisch Gmünd (73525) im
             Einsatz. Zusätzlich übernehmen wir Fahrten im gesamten
             Rems-Murr-Kreis sowie im Ostalbkreis.
           </p>
+
           <div className="flex flex-wrap gap-3">
             <Link href="/schorndorf">
               <Badge>Schorndorf · 73614</Badge>
@@ -354,6 +379,7 @@ export default function HomePage() {
               <Badge>Schwäbisch Gmünd · 73525</Badge>
             </Link>
           </div>
+
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <Button
               href="#kontakt"
@@ -389,22 +415,24 @@ export default function HomePage() {
               title="Direkt erreichbar – wir freuen uns auf Ihre Anfrage"
               description="Telefonisch, per WhatsApp oder über das Formular. Wir melden uns schnellstmöglich zurück."
             />
+
             <div className="space-y-4 rounded-xl border border-ink-200 bg-offwhite p-6">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent-600" aria-hidden="true" />
                 <div>
                   <p className="text-sm text-ink-600">Telefon</p>
                   <a
-                    href="tel:01728352885"
+                    href="tel:+4915222665594"
                     className="text-lg font-semibold text-ink-900"
                   >
-                    01728352885
+                    +49 1522 2665594
                   </a>
                   <p className="text-xs text-ink-600">
                     Erreichbar werktags · Rückruf bei verpasstem Anruf
                   </p>
                 </div>
               </div>
+
               <div className="flex items-center gap-3">
                 <MessageCircle
                   className="h-5 w-5 text-accent-600"
@@ -413,13 +441,14 @@ export default function HomePage() {
                 <div>
                   <p className="text-sm text-ink-600">WhatsApp</p>
                   <a
-                    href="https://wa.me/491728352885"
+                    href="https://wa.me/4915222665594"
                     className="text-lg font-semibold text-ink-900"
                   >
-                    01728352885
+                    +49 1522 2665594
                   </a>
                 </div>
               </div>
+
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent-600" aria-hidden="true" />
                 <div>
@@ -432,6 +461,7 @@ export default function HomePage() {
                   </a>
                 </div>
               </div>
+
               <div className="flex items-center gap-3">
                 <MapPin
                   className="h-5 w-5 text-accent-600"
@@ -445,8 +475,10 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+
             <p className="text-sm text-ink-600"></p>
           </div>
+
           <ContactForm />
         </div>
       </section>

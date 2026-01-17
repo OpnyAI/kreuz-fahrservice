@@ -25,7 +25,7 @@ export default function ImpressumPage() {
       <section className="space-y-2">
         <h2 className="text-xl font-semibold text-ink-900">Kontakt</h2>
         <p>
-          Telefon: 01728352885<br />
+          Telefon: +49 1522 2665594<br />
           E-Mail: kontakt@kreuz-fahrservice.de
         </p>
       </section>

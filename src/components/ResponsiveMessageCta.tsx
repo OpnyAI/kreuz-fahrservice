@@ -7,7 +7,7 @@ const emailCta = {
 };
 
 const whatsappCta = {
-  href: "https://wa.me/491728352885",
+  href: "https://wa.me/4915222665594",
   label: "WhatsApp schreiben",
 };
 
