@@ -5,17 +5,17 @@ import { Footer } from "@/components/Footer";
 import { StickyMobileCta } from "@/components/StickyMobileCta";
 
 export const metadata: Metadata = {
-  title: "Kreuz-Fahrservice | Medizinischer Fahrdienst in Schorndorf & Region",
+  title: "Kreuz-Fahrservice | Medizinischer Fahrdienst in Uhingen & Region",
   description:
-    "Medizinischer Fahrdienst und Transfers in Schorndorf (73614), Göppingen (73033), Uhingen (73066) und Schwäbisch Gmünd (73525). Rettungsassistent mit 16 Jahren Erfahrung für Kassen- und Privatfahrten.",
+    "Medizinischer Fahrdienst und Transfers in Uhingen (73066), Schorndorf (73614), Göppingen (73033) und Schwäbisch Gmünd (73525). Rettungsassistent mit 16 Jahren Erfahrung für Kassen- und Privatfahrten.",
   metadataBase: new URL("https://www.kreuz-fahrservice.de"),
   alternates: {
     canonical: "https://www.kreuz-fahrservice.de" // Domain später ersetzen
   },
   openGraph: {
-    title: "Kreuz-Fahrservice | Medizinischer Fahrdienst in Ihrer Region",
+    title: "Kreuz-Fahrservice | Medizinischer Fahrdienst in Uhingen & Region",
     description:
-      "Zuverlässige medizinische Fahrten und Transfers in Schorndorf, Göppingen, Uhingen und Schwäbisch Gmünd.",
+      "Zuverlässige medizinische Fahrten und Transfers in Uhingen, Schorndorf, Göppingen und Schwäbisch Gmünd.",
     url: "https://www.kreuz-fahrservice.de",
     siteName: "Kreuz-Fahrservice",
     locale: "de_DE",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kreuz-Fahrservice | Medizinischer Fahrdienst",
+    title: "Kreuz-Fahrservice | Medizinischer Fahrdienst in Uhingen",
     description:
-      "Kassen- und Privatfahrten für Schorndorf, Göppingen, Uhingen und Schwäbisch Gmünd."
+      "Kassen- und Privatfahrten für Uhingen, Schorndorf, Göppingen und Schwäbisch Gmünd."
   }
 };
 

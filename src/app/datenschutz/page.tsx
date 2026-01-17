@@ -14,8 +14,8 @@ export default function DatenschutzPage() {
         <p>
           Ingo Kreuz<br />
           Kreuz-Fahrservice<br />
-          Wieslauftalstr. 30<br />
-          73614 Schorndorf<br />
+          Nassachtalstr. 253<br />
+          73066 Uhingen<br />
           Telefon: 01728352885<br />
           E-Mail: kontakt@kreuz-fahrservice.de
         </p>

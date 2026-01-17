@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import { ResponsiveMessageCta } from "./ResponsiveMessageCta";
@@ -8,7 +9,7 @@ const navItems = [
   { href: "#einsatzgebiet", label: "Einsatzgebiet" },
   { href: "#ablauf", label: "Ablauf" },
   { href: "#faq", label: "FAQ" },
-  { href: "#kontakt", label: "Kontakt" }
+  { href: "#kontakt", label: "Kontakt" },
 ];
 
 export function Header() {
@@ -16,8 +17,14 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-ink-200 bg-offwhite/95 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <Link href="/" className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-100 text-base font-bold text-accent-600">
-            KF
+          <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-neutral-200 bg-white shadow-sm ring-1 ring-black/5">
+            <Image
+              src="/brand/logo.png"
+              alt="Kreuz-Fahrservice"
+              width={32}
+              height={32}
+              className="h-7 w-7 object-contain"
+            />
           </span>
           <div className="leading-tight">
             <p className="text-sm font-semibold text-ink-900">
@@ -26,7 +33,10 @@ export function Header() {
             <p className="text-xs text-ink-600">Medizinischer Fahrdienst</p>
           </div>
         </Link>
-        <nav aria-label="Hauptnavigation" className="hidden items-center gap-6 lg:flex">
+        <nav
+          aria-label="Hauptnavigation"
+          className="hidden items-center gap-6 lg:flex"
+        >
           {navItems.map((item) => (
             <Link
               key={item.href}

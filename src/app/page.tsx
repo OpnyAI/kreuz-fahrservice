@@ -20,6 +20,7 @@ import { Steps, Step } from "@/components/Steps";
 import { Accordion } from "@/components/Accordion";
 import { ContactForm } from "@/components/ContactForm";
 import { ResponsiveMessageCta } from "@/components/ResponsiveMessageCta";
+import { MediaCard } from "@/components/MediaCard";
 
 const faqItems = [
   {
@@ -38,9 +39,9 @@ const faqItems = [
       "Unser Schwerpunkt liegt in Schorndorf, Göppingen, Uhingen und Schwäbisch Gmünd. Fahrten darüber hinaus sind nach Absprache möglich.",
   },
   {
-    title: "Bieten Sie medizinische Fahrten in Schorndorf an?",
+    title: "Bieten Sie medizinische Fahrten in Uhingen an?",
     content:
-      "Ja, wir übernehmen regelmäßig medizinische Fahrten in Schorndorf und Umgebung, inklusive Arzt-, Klinik- und Reha-Terminen.",
+      "Ja, wir übernehmen regelmäßig medizinische Fahrten in Uhingen und Umgebung, inklusive Arzt-, Klinik- und Reha-Terminen.",
   },
   {
     title: "Übernehmen Sie Fahrten im Rems-Murr-Kreis und Ostalbkreis?",
@@ -59,14 +60,14 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Kreuz-Fahrservice",
-    image: "https://www.kreuz-fahrservice.de/images/vehicle-placeholder.jpg",
+    image: "https://www.kreuz-fahrservice.de/images/fahrzeug.jpg",
     telephone: "01728352885",
     email: "kontakt@kreuz-fahrservice.de",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Wieslauftalstr. 30",
-      addressLocality: "Schorndorf",
-      postalCode: "73614",
+      streetAddress: "Nassachtalstr. 253",
+      addressLocality: "Uhingen",
+      postalCode: "73066",
       addressCountry: "DE",
     },
     areaServed: ["Schorndorf", "Göppingen", "Uhingen", "Schwäbisch Gmünd"],
@@ -92,7 +93,7 @@ export default function HomePage() {
               Kreuz-Fahrservice und medizinischer Fahrdienst
             </p>
             <h1 className="text-3xl font-semibold text-ink-900 sm:text-4xl lg:text-5xl">
-              Medizinischer Fahrdienst in Schorndorf &amp; Umgebung
+              Medizinischer Fahrdienst in Uhingen &amp; Umgebung
             </h1>
             <p className="text-base text-ink-600 sm:text-lg">
               Zuverlässige Kranken- und Transferfahrten
@@ -105,6 +106,14 @@ export default function HomePage() {
               >
                 <Phone className="h-5 w-5" aria-hidden="true" />
                 Jetzt anrufen
+              </Button>
+              <Button
+                href="#kontakt"
+                variant="secondary"
+                size="lg"
+                ariaLabel="Verfügbarkeit anfragen"
+              >
+                Verfügbarkeit anfragen
               </Button>
               <ResponsiveMessageCta
                 type="button"
@@ -120,18 +129,20 @@ export default function HomePage() {
               <Badge>Unterstützung bei Genehmigungen</Badge>
             </div>
           </div>
-          <div className="relative rounded-2xl border border-ink-200 bg-white p-4 shadow-soft">
+          <MediaCard>
+            <div className="mb-3">
+              <div className="inline-flex items-center rounded-full border border-ink-200 bg-white/90 px-3 py-1 text-xs font-semibold text-ink-800">
+                Einsatzgebiet: Rems-Murr-Kreis &amp; Ostalbkreis
+              </div>
+            </div>
             <Image
-              src="/images/vehicle-placeholder.jpg"
-              alt="Fahrzeug des Kreuz-Fahrservice"
+              src="/images/fahrzeug.jpg"
+              alt="Einsatzfahrzeug Kreuz-Fahrservice"
               width={520}
               height={420}
-              className="h-full w-full rounded-xl object-cover"
+              className="w-full rounded-2xl object-cover"
             />
-            <div className="absolute left-4 top-4 rounded-full bg-white/90 px-4 py-2 text-xs font-semibold text-ink-800 shadow">
-              Einsatzgebiet: Rems-Murr-Kreis &amp; Ostalbkreis
-            </div>
-          </div>
+          </MediaCard>
         </div>
       </section>
 
@@ -263,13 +274,13 @@ export default function HomePage() {
               </IconListItem>
             </IconList>
           </div>
-          <div className="rounded-2xl border border-ink-200 bg-offwhite p-4 shadow-soft">
+          <MediaCard>
             <Image
-              src="/images/owner-placeholder.jpg"
+              src="/images/inhaber.jpg"
               alt="Inhaber Ingo Kreuz"
               width={480}
               height={520}
-              className="h-full w-full rounded-xl object-cover"
+              className="h-full w-full rounded-2xl object-cover object-top"
             />
             <p className="mt-4 text-sm font-semibold text-ink-900">
               Ingo Kreuz · Rettungsassistent
@@ -277,7 +288,7 @@ export default function HomePage() {
             <p className="text-xs text-ink-600">
               Rettungsassistent · 16 Jahre Berufserfahrung · Schorndorf
             </p>
-          </div>
+          </MediaCard>
         </div>
       </section>
 
@@ -348,7 +359,7 @@ export default function HomePage() {
       </section>
 
       <section id="faq" className="py-16">
-        <div className="mx-auto w-full max-w-4xl space-y-8 px-4 sm:px-6">
+        <div className="mx-auto w-full max-w-6xl space-y-8 px-4 sm:px-6">
           <SectionHeader
             eyebrow="FAQ"
             title="Häufige Fragen"
@@ -414,14 +425,12 @@ export default function HomePage() {
                 <div>
                   <p className="text-sm text-ink-600">Adresse</p>
                   <p className="text-base font-semibold text-ink-900">
-                    Wieslauftalstr. 30, 73614 Schorndorf
+                    Nassachtalstr. 253, 73066 Uhingen
                   </p>
                 </div>
               </div>
             </div>
-            <p className="text-sm text-ink-600">
-              Inhaber: Ingo Kreuz · Beginn: 02.02.2026
-            </p>
+            <p className="text-sm text-ink-600"></p>
           </div>
           <ContactForm />
         </div>

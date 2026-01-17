@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Impressum | Kreuz-Fahrservice",
-  description: "Impressum von Kreuz-Fahrservice in Schorndorf."
+  description:
+    "Impressum von Kreuz-Fahrservice in Uhingen (Einsatzgebiet Schorndorf & Region)."
 };
 
 export default function ImpressumPage() {
@@ -16,8 +17,8 @@ export default function ImpressumPage() {
         <p>
           Kreuz-Fahrservice<br />
           Ingo Kreuz<br />
-          Wieslauftalstr. 30<br />
-          73614 Schorndorf<br />
+          Nassachtalstr. 253<br />
+          73066 Uhingen<br />
           Deutschland
         </p>
       </section>
@@ -38,8 +39,8 @@ export default function ImpressumPage() {
         </h2>
         <p>
           Ingo Kreuz<br />
-          Wieslauftalstr. 30<br />
-          73614 Schorndorf
+          Nassachtalstr. 253<br />
+          73066 Uhingen
         </p>
       </section>
     </main>
