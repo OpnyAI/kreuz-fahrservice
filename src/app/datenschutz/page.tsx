@@ -16,7 +16,7 @@ export default function DatenschutzPage() {
           Kreuz-Fahrservice<br />
           Nassachtalstr. 253<br />
           73066 Uhingen<br />
-          Telefon: +49 1522 2665594<br />
+          Telefon: +49 172 8352885<br />
           E-Mail: kontakt@kreuz-fahrservice.de
         </p>
       </section>

@@ -61,7 +61,7 @@ export default function HomePage() {
     "@type": "LocalBusiness",
     name: "Kreuz-Fahrservice",
     image: "https://www.kreuz-fahrservice.de/images/fahrzeug.jpg",
-    telephone: "+49 1522 2665594",
+    telephone: "+49 172 8352885",
     email: "kontakt@kreuz-fahrservice.de",
     address: {
       "@type": "PostalAddress",
@@ -106,7 +106,7 @@ export default function HomePage() {
             <div id="hero-cta-sentinel">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Button
-                  href="tel:+4915222665594"
+                  href="tel:+491728352885"
                   size="lg"
                   ariaLabel="Jetzt anrufen"
                   className="h-12 gap-2 px-6 py-2"
@@ -422,10 +422,10 @@ export default function HomePage() {
                 <div>
                   <p className="text-sm text-ink-600">Telefon</p>
                   <a
-                    href="tel:+4915222665594"
+                    href="tel:+491728352885"
                     className="text-lg font-semibold text-ink-900"
                   >
-                    +49 1522 2665594
+                    +49 172 8352885
                   </a>
                   <p className="text-xs text-ink-600">
                     Erreichbar werktags · Rückruf bei verpasstem Anruf
@@ -441,10 +441,10 @@ export default function HomePage() {
                 <div>
                   <p className="text-sm text-ink-600">WhatsApp</p>
                   <a
-                    href="https://wa.me/4915222665594"
+                    href="https://wa.me/491728352885"
                     className="text-lg font-semibold text-ink-900"
                   >
-                    +49 1522 2665594
+                    +49 172 8352885
                   </a>
                 </div>
               </div>

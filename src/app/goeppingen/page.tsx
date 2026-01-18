@@ -58,7 +58,7 @@ export default function GoeppingenPage() {
             <div id="hero-cta-sentinel">
               <div className="flex flex-col gap-3 sm:flex-row">
                 <Button
-                  href="tel:+4915222665594"
+                  href="tel:+491728352885"
                   size="lg"
                   ariaLabel="Jetzt anrufen"
                   className="hidden md:inline-flex md:h-12 md:px-6 md:py-2 md:gap-2"
@@ -138,7 +138,7 @@ export default function GoeppingenPage() {
               Verfügbarkeit anfragen
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Button>
-            <Button href="tel:+4915222665594" variant="secondary">
+            <Button href="tel:+491728352885" variant="secondary">
               Jetzt anrufen
             </Button>
           </div>
@@ -153,7 +153,7 @@ export default function GoeppingenPage() {
             description="Rufen Sie uns an oder fragen Sie die Verfügbarkeit an – wir melden uns schnellstmöglich zurück."
           />
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button href="tel:+4915222665594" size="lg" ariaLabel="Jetzt anrufen">
+            <Button href="tel:+491728352885" size="lg" ariaLabel="Jetzt anrufen">
               <Phone className="h-5 w-5" aria-hidden="true" />
               Jetzt anrufen
             </Button>

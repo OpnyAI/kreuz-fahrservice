@@ -93,11 +93,11 @@ export function Header() {
         </button>
         <div className="hidden items-center gap-3 md:flex">
           <a
-            href="tel:+4915222665594"
+            href="tel:+491728352885"
             className="inline-flex items-center gap-2 rounded-full border border-ink-300 bg-white px-4 py-2 text-sm font-semibold text-ink-800 hover:border-accent-600 hover:text-accent-600"
           >
             <Phone className="h-4 w-4" aria-hidden="true" />
-            +49 1522 2665594
+            +49 172 8352885
           </a>
           <ResponsiveMessageCta
             type="link"
@@ -141,11 +141,11 @@ export function Header() {
                   </Link>
                 ))}
                 <a
-                  href="tel:+4915222665594"
+                  href="tel:+491728352885"
                   className="block text-base font-semibold text-ink-800"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  +49 1522 2665594
+                  +49 172 8352885
                 </a>
               </nav>
             </div>
